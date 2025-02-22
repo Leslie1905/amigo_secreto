@@ -19,7 +19,7 @@ function mostrarLista() {
     listaAmigos.innerHTML = '';  
 
     amigos.forEach((amigo) => {
-        const li = document.createElement('li');
+        let li = document.createElement('li');
         li.textContent = amigo;
         listaAmigos.appendChild(li);
     });
